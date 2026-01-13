@@ -3,14 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Image overlay -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <ImageView
         android:id="@+id/overlayImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
-        android:alpha="0.5"
-        android:src="@android:color/transparent" />
+        android:alpha="0.5" />
 
     <!-- this is the button to pick an image-->
     <Button
