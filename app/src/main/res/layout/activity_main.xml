@@ -4,21 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Camera Preview -->
+    <!-- Full-screen Camera Preview -->
     <androidx.camera.view.PreviewView
         android:id="@+id/cameraPreview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Image Overlay -->
+    <!-- Transparent Image Overlay -->
     <ImageView
         android:id="@+id/overlayImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         android:alpha="0.5" />
 
-    <!-- Bottom Control Panel -->
+    <!-- Bottom Control Panel (semi-transparent) -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
         android:layout_margin="16dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
-        app:cardBackgroundColor="#CC1E1E1E">
+        app:cardBackgroundColor="#AA1E1E1E"> <!-- lighter transparency -->
 
         <LinearLayout
             android:layout_width="match_parent"
