@@ -12,6 +12,16 @@
         android:alpha="0.5"
         android:src="@android:color/transparent" />
 
+    <!-- this is the button to pick an image-->
+    <Button
+        android:id="@+id/pickImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Image"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
     <!-- Transparency slider -->
     <SeekBar
         android:id="@+id/opacitySlider"
